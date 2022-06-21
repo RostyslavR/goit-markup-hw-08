@@ -51,10 +51,6 @@
       column-gap: 50px;
     }
     .nav__link {
-      // padding: 32px 0;
-      // display: flex;
-      // align-items: center;
-
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -88,7 +84,7 @@
     flex-direction: column;
     position: absolute;
     z-index: 2;
-
+    overflow: auto;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
@@ -149,6 +145,7 @@
   border: none;
   color: #000;
   background-color: var(--primary-color);
+  transition: color $tm $cubic, opacity $tm $cubic;
   cursor: pointer;
   &:hover,
   &:focus {
@@ -164,74 +161,9 @@
   &:not(.is-open) {
     .icon--cross {
       opacity: 0;
-      transition: opacity $tm $cubic;
     }
     .icon--menu {
       opacity: 1;
-      transition: opacity $tm $cubic;
     }
   }
 }
-
-// .nav-menu {
-//   // width: 500px;
-//   display: flex;
-//   flex: 1 40%;
-//   // justify-content: space-between;
-//   // align-items: center;
-// }
-
-// .nav__list {
-//   display: flex;
-//   // justify-content: space-between;
-//   // justify-content: center;
-//   column-gap: 50px;
-//   // height: 100%;
-// }
-// // .nav_item {
-// //   height: 100%;
-// // }
-
-// @media screen and (max-width: ($tablet - 1)) {
-//   .header-box {
-//     // justify-content: start;
-
-//     &:not(.is-open) {
-//       // align-items: center;
-//       .nav__list,
-//       .address__list,
-//       .social__list {
-//         display: none;
-//       }
-//     }
-//     &.is-open {
-//       // left: 0;
-//       // height: 100%;
-//       // padding: 48px 40px;
-//       // flex-direction: column;
-//       .address__list {
-//         // display: flex;
-//         // flex-direction: column-reverse;
-//         // height: 80%;
-//       }
-//       .logo {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-width: $tablet) {
-//   .page-header {
-//     .social__list {
-//       display: none;
-//     }
-//   }
-//   .header-box {
-//     // align-items: center;
-//   }
-//   .nav__list {
-//     // width: 294px;
-//     // align-items: center;
-//   }
-// }

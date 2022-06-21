@@ -213,8 +213,7 @@
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: color var(--tm) var(--cubic-b),
-    border-color var(--tm) var(--cubic-b);
+  transition: color $tm $cubic, border-color $tm $cubic;
   &:hover,
   &:focus {
     color: var(--secondary-color);

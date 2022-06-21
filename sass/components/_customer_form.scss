@@ -86,7 +86,7 @@
   height: 18px;
   fill: var(--header-color);
   pointer-events: none;
-  transition: border-color $tm $cubic;
+  transition: fill $tm $cubic;
   .input:hover + &,
   .input:focus + & {
     fill: var(--secondary-color);
@@ -131,6 +131,7 @@
   border-radius: 2px;
   fill: var(--primary-color);
   pointer-events: none;
+  transition: background-color $tm $cubic, border-color $tm $cubic;
 
   .check:checked + & {
     background-color: var(--secondary-color);
@@ -151,6 +152,11 @@
 }
 .check__link {
   color: var(--secondary-color);
+  transition: background-color $tm $cubic;
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
 }
 
 .close-button {
