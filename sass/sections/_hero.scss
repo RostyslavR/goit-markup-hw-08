@@ -3,7 +3,6 @@
   min-width: $minwidth;
   padding-top: 118px;
   margin: 0 auto;
-
   background-color: var(--hero-bg-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -14,12 +13,11 @@
     (min-resolution: 2dppx) {
     background-image: $hero-overlay, url(../images/hero_960x800.jpg);
   }
-
   @media screen and (min-width: $mobile) {
-    max-width: $mobile;
+    max-width: $tablet;
   }
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+    max-width: $desktop;
     background-image: $hero-overlay, url(../images/hero_768x400.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -42,7 +40,6 @@
     margin: 0 auto;
   }
 }
-
 .hero__title {
   margin: 0 auto $margin;
   text-align: center;

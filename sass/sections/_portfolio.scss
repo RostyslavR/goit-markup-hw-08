@@ -4,7 +4,6 @@
     padding: 94px 0;
   }
 }
-
 .filter__list {
   display: flex;
   margin-bottom: 40px;
@@ -21,7 +20,6 @@
     margin-bottom: 50px;
   }
 }
-
 .filter__button {
   display: block;
   padding: 0 22px;
@@ -67,7 +65,7 @@
   @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
     flex: 1 40%;
     &:last-child {
-      flex: 0 1 ($tablet / 2) - ($margin);
+      flex: 0 1 ($tablet / 2) - ($margin * 1.25);
     }
   }
   @media screen and (min-width: $desktop) {
