@@ -187,28 +187,11 @@ img {
 
 .page-header .address__link {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), line-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-header .address__link:hover, .page-header .address__link:focus {
-  color: var(--secondary-color);
-}
-
-@media screen and (max-width: 767px) {
-  .page-header .address__link:hover, .page-header .address__link:focus {
-    font-size: 34px;
-    line-height: 1.18;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header .address__link {
-    font-size: 12px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -216,6 +199,20 @@ img {
     font-size: 14px;
     line-height: 1.14;
   }
+}
+
+.page-header .address__link:hover, .page-header .address__link:focus {
+  color: var(--secondary-color);
+}
+
+.page-header.is-mobile .address__link {
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.page-header.is-mobile .address__link:hover, .page-header.is-mobile .address__link:focus {
+  font-size: 34px;
+  line-height: 1.18;
 }
 
 .page-footer .address__link {
@@ -231,16 +228,12 @@ img {
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 767px) {
-  .page-header .address__icon {
-    display: none;
-  }
+.address__icon {
+  margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .page-header .address__icon {
-    margin-right: 10px;
-  }
+.page-header.is-mobile .address__icon {
+  display: none;
 }
 
 .social__list {
@@ -505,25 +498,20 @@ img {
   z-index: 5;
 }
 
-@media screen and (max-width: 767px) {
-  .page-header {
-    overflow: auto;
-  }
+.page-header.is-mobile {
+  max-height: 100vh;
+  overflow: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .header-container {
-    max-width: 480px;
-  }
+.page-header.is-mobile .mobile-container {
+  max-width: 480px;
 }
 
 .header-content {
-  height: 60px;
   position: relative;
 }
 
 .header-content.is-mobile {
-  height: 100vh;
   width: 100%;
   padding: 48px 40px;
 }
@@ -563,6 +551,7 @@ img {
 }
 
 .header-content:not(.is-mobile) {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;

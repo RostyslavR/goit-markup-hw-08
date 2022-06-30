@@ -6,21 +6,18 @@
   top: 0;
   left: 0;
   z-index: 5;
-  @media screen and (max-width: ($tablet - 1)) {
+  &.is-mobile {
+    max-height: 100vh;
     overflow: auto;
-  }
-}
-.header-container {
-  @media screen and (max-width: ($tablet - 1)) {
-    max-width: $mobile;
+    .mobile-container {
+      max-width: $mobile;
+    }
   }
 }
 .header-content {
-  height: 60px;
   position: relative;
 }
 .header-content.is-mobile {
-  height: 100vh;
   width: 100%;
   padding: 48px 40px;
   .menu-button {
@@ -52,6 +49,7 @@
   }
 }
 .header-content:not(.is-mobile) {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -6,30 +6,30 @@
 .address__link {
   .page-header & {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color $tm $cubic, font-size $tm $cubic, line-height $tm $cubic;
-    &:hover,
-    &:focus {
-      color: var(--secondary-color);
-    }
-    @media screen and (max-width: ($tablet - 1)) {
-      &:hover,
-      &:focus {
-        font-size: 34px;
-        line-height: 1.18;
-      }
-    }
-    @media screen and (min-width: $tablet) {
-      font-size: 12px;
-    }
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.14;
     }
+    &:hover,
+    &:focus {
+      color: var(--secondary-color);
+    }
   }
+  .page-header.is-mobile & {
+    font-size: 24px;
+    line-height: 1.17;
+    &:hover,
+    &:focus {
+      font-size: 34px;
+      line-height: 1.18;
+    }
+  }
+
   .page-footer & {
     font-weight: 400;
     font-size: 14px;
@@ -44,12 +44,8 @@
   }
 }
 .address__icon {
-  .page-header & {
-    @media screen and (max-width: ($tablet - 1)) {
-      display: none;
-    }
-    @media screen and (min-width: $tablet) {
-      margin-right: 10px;
-    }
+  margin-right: 10px;
+  .page-header.is-mobile & {
+    display: none;
   }
 }
