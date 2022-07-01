@@ -14,9 +14,13 @@
   .address__item:not(:last-child) {
     margin-bottom: 8px;
   }
-  @media screen and (min-width: $desktop) {
-    .footer__address,
+  @media screen and (min-width: $tablet) {
     .social__list {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .footer__address {
       margin-bottom: 0;
     }
     text-align: left;

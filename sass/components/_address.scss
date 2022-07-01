@@ -39,7 +39,8 @@
     transition: color $tm $cubic;
     &:hover,
     &:focus {
-      color: var(--primary-color);
+      // color: var(--primary-color);
+      color: var(--secondary-color);
     }
   }
 }
