@@ -687,15 +687,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero {
-    max-width: 768px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 1200px;
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero_768x400.jpg);
   }
 }
@@ -709,7 +702,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     min-height: 600px;
-    max-width: 1600px;
     padding-top: 200px;
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero_1600x600.jpg);
   }

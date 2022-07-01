@@ -13,11 +13,7 @@
     (min-resolution: 2dppx) {
     background-image: $hero-overlay, url(../images/hero_960x800.jpg);
   }
-  @media screen and (min-width: $mobile) {
-    max-width: $tablet;
-  }
   @media screen and (min-width: $tablet) {
-    max-width: $desktop;
     background-image: $hero-overlay, url(../images/hero_768x400.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -27,7 +23,6 @@
   }
   @media screen and (min-width: $desktop) {
     min-height: 600px;
-    max-width: 1600px;
     padding-top: 200px;
     background-image: $hero-overlay, url(../images/hero_1600x600.jpg);
     @media (min-device-pixel-ratio: 2),
