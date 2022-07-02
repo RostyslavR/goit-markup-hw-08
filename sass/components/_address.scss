@@ -29,7 +29,6 @@
       line-height: 1.18;
     }
   }
-
   .page-footer & {
     font-weight: 400;
     font-size: 14px;
@@ -39,9 +38,13 @@
     transition: color $tm $cubic;
     &:hover,
     &:focus {
-      // color: var(--primary-color);
       color: var(--secondary-color);
     }
+  }
+}
+.address__link--color {
+  .page-footer & {
+    color: var(--primary-color);
   }
 }
 .address__icon {

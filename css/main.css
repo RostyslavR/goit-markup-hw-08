@@ -228,6 +228,10 @@ img {
   color: var(--secondary-color);
 }
 
+.page-footer .address__link--color {
+  color: var(--primary-color);
+}
+
 .address__icon {
   margin-right: 10px;
 }
