@@ -9,9 +9,6 @@
   &.is-mobile {
     max-height: 100vh;
     overflow: auto;
-    .mobile-container {
-      max-width: $mobile;
-    }
   }
 }
 .header-content {

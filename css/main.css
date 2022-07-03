@@ -508,10 +508,6 @@ img {
   overflow: auto;
 }
 
-.page-header.is-mobile .mobile-container {
-  max-width: 480px;
-}
-
 .header-content {
   position: relative;
 }
